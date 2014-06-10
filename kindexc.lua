@@ -6,7 +6,7 @@ function kiSort(a, R)
 	local count = { }
 	for i = 0, R do count[i] = 0 end
 
-	-- count frequencies
+	-- count frequencies, offset by +1
 	for i = 1, #a do
 		count[a[i]+1] = count[a[i]+1] + 1
 	end
